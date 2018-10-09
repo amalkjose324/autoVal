@@ -2134,8 +2134,8 @@ section {
     -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background: #365cad;
-    padding: 0 35px;
+    background: #ffffff;
+    padding: 0 60px;
 }
 
 @media (max-width: 991px) {
@@ -2638,7 +2638,9 @@ section {
     transform: translateX(-50%);
     top: -12px;
 }
-
+.logo_white{
+    height: 70px;
+}
 .header__logo {
     display: -webkit-box;
     display: -webkit-flex;
