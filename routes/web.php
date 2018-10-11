@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'PageController@home');
+Route::get('/console', 'PageController@dashboard');

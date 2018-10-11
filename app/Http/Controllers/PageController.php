@@ -9,4 +9,8 @@ class PageController extends Controller
     public function home()    {
         return view('homepage');
     }
+    
+    public function dashboard()    {
+        return view('dashboard');
+    }
 }
