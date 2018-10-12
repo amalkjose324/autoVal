@@ -12,4 +12,12 @@
 */
 
 Route::get('/', 'PageController@home');
-Route::get('/console', 'PageController@dashboard');
+// Route::get('/console', 'PageController@dashboard');
+
+Auth::routes();
+
+Route::get('/console', 'HomeController@index')->name('home');
+
+Route::get('/login/{social}','Auth\LoginController@socialLogin')->where('social','twitter|facebook|linkedin|google|github');
+
+Route::get('/login/{social}/callback','Auth\LoginController@handleProviderCallback')->where('social','twitter|facebook|linkedin|google|github');

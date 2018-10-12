@@ -73,11 +73,7 @@
           <p>A complete solution API for Automatic Form Validation.</p>
           <br>
           <a href="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" download="jquery-3.2.1.min.js" class="btn btn-default btn-lg"
-            title="">Download jquery-3.2.1.min.js</a>
-          <a href="https://rawgit.com/ozonhub/autoVal/master/js/autoval-script.js" download="autoval-script.js" class="btn btn-default btn-lg"
-            title="">Download autoVal-script.js</a>
-          <a href="https://rawgit.com/ozonhub/autoVal/master/css/autoval-style.css" download="autoval-style.css" class="btn btn-default btn-lg"
-            title="">Download autoVal-style.css</a>
+            title="">Go to Console</a>
         </div>
       </div>
     </div>
