@@ -2,37 +2,18 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width,initial-scale=1" name="viewport">
-  <meta content="description" name="OzonHub">
-  <meta name="google" content="notranslate" />
-  <meta content="autoVal API : jQuery based Automatic Form Validation" name="Amal K Jose">
-
-  <!-- Disable tap highlight on IE -->
-  <meta name="msapplication-tap-highlight" content="no">
-
-  <link href="favicon.ico" rel="icon">
-
-  <title>AutoVal : Automatic Form Validatior</title>
-
-
+<!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+    <link href="favicon.ico" rel="icon">
+    <!-- Title Page-->
+    <title>AutoVal : Automatic Form Validatior</title>
   <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
   <link href="css/homestyle.css" rel="stylesheet">
 </head>
-<style>
-  .navbar-logo-img {
-    height: 75px;
-    margin-top: -25px !important;
-  }
-
-  .navbar-logo-img-big {
-    max-width: 620px;
-    width: 70%;
-    margin-top: -25px !important;
-  }
-</style>
-
 <body>
   <!-- Add your content of header -->
   <header>
@@ -71,9 +52,10 @@
         <div class="col-xs-12">
           <h1><img src="images/icon/logo-white_lo.png" class="navbar-logo-img-big" alt="AutoVal"></h1>
           <p>A complete solution API for Automatic Form Validation.</p>
-          <br>
-          <a href="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" download="jquery-3.2.1.min.js" class="btn btn-default btn-lg"
-            title="">Go to Console</a>
+          <br> @if (Auth::check())
+        <a href="{{ route('console')}}" class="btn btn-default btn-lg" title="">Go to Console</a> @else
+          <a href="" class="btn btn-default btn-lg" title="">Login to view Console</a> @endif
+
         </div>
       </div>
     </div>
@@ -234,7 +216,7 @@
       </div>
     </div>
   </div>
-  </div>
+
   <script>
     document.addEventListener("DOMContentLoaded", function (event) {
           navbarFixedTopAnimation();

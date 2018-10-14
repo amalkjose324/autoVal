@@ -1,4 +1,4 @@
-@extends('layout') 
+@extends('layouts.console_layout')
 @section('content')
 
 <div class="row">
