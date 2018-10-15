@@ -8,9 +8,9 @@
     <meta name="description" content="au theme template">
     <meta name="author" content="Hau Nguyen">
     <meta name="keywords" content="au theme template">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <!-- Title Page-->
-    <title>AutoVal : Automatic Form Validatior</title>
+    <title>ClientVal : An API for automatic client-side form validation</title>
 
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
@@ -186,7 +186,7 @@
                                                                                                                                  document.getElementById('logout-form').submit();">
                                                                                                                    <i class="fas fa-sign-out-alt"></i> {{ __('Logout') }}
                                                                                                                 </a>
-                                            
+
                                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                                 @csrf
                                             </form>
@@ -268,12 +268,12 @@
                                 <i class="fa fa-envelope"></i>Support</a>
                             </li>
                             <li>
-                                
+
                                 <a href="{{ route('logout') }}" onclick="event.preventDefault();
                                                                                      document.getElementById('logout-form').submit();">
                                                                        <i class="fas fa-sign-out-alt"></i> {{ __('Logout') }}
                                                                     </a>
-                                
+
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     @csrf
                                 </form>

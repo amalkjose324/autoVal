@@ -2,18 +2,20 @@
 <html lang="en">
 
 <head>
-<!-- Required meta tags-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="au theme template">
-    <meta name="author" content="Hau Nguyen">
-    <meta name="keywords" content="au theme template">
-    <link href="favicon.ico" rel="icon">
-    <!-- Title Page-->
-    <title>AutoVal : Automatic Form Validatior</title>
+  <!-- Required meta tags-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="au theme template">
+  <meta name="author" content="Hau Nguyen">
+  <meta name="keywords" content="au theme template">
+  <link href="favicon.ico" rel="icon">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+
+  <title>ClientVal : An API for automatic client-side form validation</title>
   <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
   <link href="css/homestyle.css" rel="stylesheet">
 </head>
+
 <body>
   <!-- Add your content of header -->
   <header>
@@ -53,7 +55,7 @@
           <h1><img src="images/icon/logo-white_lo.png" class="navbar-logo-img-big" alt="AutoVal"></h1>
           <p>A complete solution API for Automatic Form Validation.</p>
           <br> @if (Auth::check())
-        <a href="{{ route('console')}}" class="btn btn-default btn-lg" title="">Go to Console</a> @else
+          <a href="{{ route('console')}}" class="btn btn-default btn-lg" title="">Go to Console</a> @else
           <a href="" class="btn btn-default btn-lg" title="">Login to view Console</a> @endif
 
         </div>

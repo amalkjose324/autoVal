@@ -15,9 +15,9 @@ Route::get('/', function () {
 })->name('home');
 // Route::get('/', 'HomeController@home')->name('home');
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
-Route::get('/console', 'HomeController@console')->name('console');
+Route::get('/console', 'HomeController@console')->name('console')->middleware('verified');
 
 Route::get('/login/{social}', 'Auth\LoginController@socialLogin')->where('social', 'twitter|facebook|linkedin|google|github');
 
